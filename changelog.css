@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background-color: #f9f9f9;
+}
+
+.changelog {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 45px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.changelog {
+    margin: 0 auto;
+}
+
+.x-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.x-date {
+    color: #bbb;
+    font-size: 14px;
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.x-x1 {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+}
+
+.x-x1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3px;
+    height: 6rem;
+    background-color: black;
+}
+
+.x-x1::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 3rem;
+    background-color: black;
+}
+
+.x-content {
+    flex: 2;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.button {
+    background-color: #000000;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #555;
+}
